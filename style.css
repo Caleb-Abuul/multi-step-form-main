@@ -1,0 +1,339 @@
+:root {
+  --ff-primary: "Ubuntu", sans-serif;
+
+  --Marine-blue: hsl(213, 96%, 18%);
+  --Marine-blue-800: hsl(213, 96%, 30%);
+  --purplish-blue: hsl(243, 100%, 62%);
+  --Pastel-blue: hsl(228, 100%, 84%);
+  --Light-blue: hsl(206, 94%, 87%);
+  --strewberry-red: hsl(354, 84%, 57%);
+
+  --Neutral-cool-gray: hsl(231, 11%, 63%);
+  --Neutral-light-gray: hsl(229, 24%, 87%);
+  --Neutral-magnolia: hsl(217, 100%, 97%);
+  --Neutral-alabaster: hsl(231, 100%, 99%);
+  --Neutral-white: hsl(0, 0%, 100%);
+
+  --fs-100: 0.9375rem;
+  --fs-body: 1rem;
+  --fs-300: 1.5rem;
+  --fs-800: 4rem;
+
+  --fw-small: 400;
+  --fw-regular: 500;
+  --fw-bold: 700;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: var(--ff-primary);
+}
+body {
+  max-width: 1440px;
+  background: var(--Neutral-magnolia);
+}
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  width: 870px;
+  background: var(--Neutral-white);
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.card-left {
+  position: relative;
+  /* flex-basis: 37.5%; */
+}
+.card-left img {
+  display: block;
+}
+.card-left .text-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+}
+.text-wrap {
+  width: 100%;
+  color: var(--Light-blue);
+}
+.step1,
+.step2,
+.step3,
+.step4 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  margin-block: 1.5rem;
+}
+.step1 h1,
+.step2 h1,
+.step3 h1,
+.step4 h1 {
+  font-size: 16px;
+}
+
+.step1 p,
+.step2 p,
+.step3 p,
+.step4 p {
+  font-size: 16px;
+  font-weight: var(--fw-bold);
+}
+.step1__left,
+.step2__left,
+.step3__left,
+.step4__left {
+  width: 100%;
+  height: 38.92px;
+  flex-basis: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: var(--Light-blue);
+
+  padding-block: 8px;
+    */
+  border-radius: 100vmax;
+  border: 1px solid var(--Light-blue);
+}
+.step1__right h1,
+.step2__right h1,
+.step3__right h1,
+.step4__right h1 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: var(--fw-regular);
+}
+.step1__right h1 span,
+.step2__right h1 span,
+.step3__right h1 span,
+.step4__right h1 span {
+  font-weight: var(--fw-bold);
+}
+.step1__left p,
+.step2__left p,
+.step3__left p,
+.step4__left p {
+  margin: 0;
+}
+.step1__right,
+.step2__right,
+.step3__right,
+.step4__right {
+  flex-basis: 80%;
+}
+
+/* right card */
+.step2-form {
+  display: none;
+}
+.card-right {
+  flex: 1;
+  padding: 2rem 3rem;
+}
+
+.card-right .step1-form {
+  width: 100%;
+}
+#step1-form {
+  display: none;
+}
+
+.form-wrapper {
+  color: var(--Marine-blue);
+  width: 100%;
+}
+.title h1 {
+  font-weight: var(--fw-bold);
+}
+.title p {
+  color: var(--Neutral-cool-gray);
+  padding-block: 1rem;
+}
+.input-fields {
+  padding-block: 2rem;
+}
+.input-fields input {
+  color: var(--Marine-blue);
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  outline: none;
+  border: 2px solid var(--Neutral-cool-gray);
+}
+.input-fields input:focus {
+  border: 2px solid var(--Marine-blue);
+}
+.input-fields label {
+  display: block;
+  font-weight: 550;
+  font-size: 14px;
+  margin-bottom: 0.25rem;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3.5rem;
+}
+.buttons p {
+  color: var(--Neutral-cool-gray);
+  font-weight: var(--fw-bold);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.buttons p:hover {
+  color: var(--Marine-blue);
+}
+.buttons button {
+  height: 45px;
+  padding-inline: 25px;
+  border-radius: 6px;
+  font-weight: var(--fw-bold);
+  outline: none;
+  border: 0;
+  background: var(--Marine-blue);
+  color: var(--Light-blue);
+  cursor: pointer;
+  margin-left: auto;
+}
+.buttons button:hover {
+  background: var(--Marine-blue-800);
+}
+
+/* step 2 form */
+.step2-form > h1,
+h2 {
+  color: var(--Marine-blue);
+}
+.step2-form .title h1 {
+  color: var(--Marine-blue);
+}
+.step2-form .options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 2rem;
+}
+
+.option-col {
+  border: 2px solid var(--Neutral-light-gray);
+  flex-basis: 30%;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  border-radius: 0.5rem;
+}
+.option-col:active,
+.option-col:hover {
+  border: 2px solid var(--purplish-blue);
+}
+.option-col .desc {
+  margin-top: 2rem;
+}
+.option-col .desc h2 {
+  font-size: 14px;
+}
+.option-col .desc p {
+  padding-top: 0.25rem;
+  padding-bottom: 0.75rem;
+  font-size: 12px;
+  color: var(--Neutral-light-gray);
+}
+.toggle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Neutral-cool-gray);
+  background: var(--Neutral-light-gray);
+  border-radius: 0.5rem;
+  height: 50px;
+}
+.inner-wrapper {
+  display: flex;
+}
+.inner-wrapper p {
+  font-size: 14px;
+  font-weight: var(--fw-bold);
+}
+.toggle {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  margin-inline: 20px;
+}
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--Marine-blue);
+  border-radius: 100vmax;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background: var(--Neutral-white);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+.step2-buttons {
+  margin-top: 7.5rem;
+}
+
+/* step 3 */
+.step3-form {
+  display: flex;
+  flex-direction: column;
+}
+.add-ons {
+  display: flex;
+  flex-direction: column;
+}
+.add-ons .add-on-row {
+  flex-basis: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add-on-row:nth-child(1) {
+  flex-basis: 5%;
+}
+.add-on-row:nth-child(2) {
+  flex-basis: 70%;
+}
+.add-on-row:nth-child(3) {
+  flex-basis: 25%;
+}

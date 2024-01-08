@@ -34,28 +34,31 @@
       <div class="wrapper">
         <!-- Sidebar start -->
         <div class="card-left">
-          <div class="step1">
-            <div class="step1__left"><h1>1</h1></div>
-            <div class="step1__right">
-              <h1>Step 1<span>Your info</span></h1>
+          <img src="assets/images/bg-sidebar-desktop.svg" alt="" />
+          <div class="text-wrap">
+            <div class="step1">
+              <div class="step1__left"><p>1</p></div>
+              <div class="step1__right">
+                <h1>Step 1 <br /><span>Your info</span></h1>
+              </div>
             </div>
-          </div>
-          <div class="step2">
-            <div class="step2__left"><h1>2</h1></div>
-            <div class="step2__right">
-              <h1>Step 2<span>Select plan</span></h1>
+            <div class="step2">
+              <div class="step2__left"><p>2</p></div>
+              <div class="step2__right">
+                <h1>Step 2 <br /><span>Select plan</span></h1>
+              </div>
             </div>
-          </div>
-          <div class="step3">
-            <div class="step3__left"><h1>3</h1></div>
-            <div class="step3__right">
-              <h1>Step 3<span>Add-ons</span></h1>
+            <div class="step3">
+              <div class="step3__left"><p>3</p></div>
+              <div class="step3__right">
+                <h1>Step 3 <br /><span>Add-ons</span></h1>
+              </div>
             </div>
-          </div>
-          <div class="step4">
-            <div class="step4__left"><h1>4</h1></div>
-            <div class="step4__right">
-              <h1>Step 4<span>Summary</span></h1>
+            <div class="step4">
+              <div class="step4__left"><p>4</p></div>
+              <div class="step4__right">
+                <h1>Step 4 <br /><span>Summary</span></h1>
+              </div>
             </div>
           </div>
         </div>
@@ -65,7 +68,7 @@
           <!-- Step 1 start -->
 
           <form id="step1-form">
-            <div class="step1">
+            <div class="form-wrapper">
               <div class="title">
                 <h1>Personal info</h1>
                 <p>
@@ -133,13 +136,16 @@
             </div>
 
             <div class="toggle-wrapper">
-              <p>Monthly</p>
-              <div class="toggle">
-                <img src="assets/images/icon-checkmark.svg" alt="" />
+              <div class="inner-wrapper">
+                <p>Monthly</p>
+                <label class="toggle">
+                  <input type="checkbox" name="Toggle buton" id="toggleBtn" />
+                  <span class="slider"></span>
+                </label>
+                <p>Yearly</p>
               </div>
-              <p>Yearly</p>
             </div>
-            <div class="buttons">
+            <div class="buttons step2-buttons">
               <p>Go Back</p>
               <button type="submit">Next Step</button>
             </div>
@@ -147,13 +153,13 @@
           <!-- Step 2 end -->
 
           <!-- Step 3 start -->
-          <div class="signup-form-3">
+          <div class="step3-form">
             <div class="title">
               <h1>Pick add-ons</h1>
               <p>Add-ons help enhance your gaming experience.</p>
             </div>
-            <div class="adds-ons">
-              <div class="adds-on-row">
+            <div class="add-ons">
+              <div class="add-on-row">
                 <input type="checkbox" name="" id="online-services" />
                 <div class="description">
                   <h3>Online service</h3>
@@ -161,7 +167,7 @@
                 </div>
                 <p>+$1/mo</p>
               </div>
-              <div class="adds-on-row">
+              <div class="add-on-row">
                 <input type="checkbox" name="" id="larger-storage" />
                 <div class="description">
                   <h3>Larger storage</h3>
@@ -169,7 +175,7 @@
                 </div>
                 <p>+$2/mo</p>
               </div>
-              <div class="adds-on-row">
+              <div class="add-on-row">
                 <input type="checkbox" name="" id="customizable-profile" />
                 <div class="description">
                   <h3>Customizable Profile</h3>
