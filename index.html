@@ -67,7 +67,7 @@
         <div class="card-right">
           <!-- Step 1 start -->
 
-          <form id="step1-form">
+          <form id="step1Form" class="step1-form">
             <div class="form-wrapper">
               <div class="title">
                 <h1>Personal info</h1>
@@ -99,14 +99,14 @@
                 />
               </div>
               <div class="buttons">
-                <button type="submit">Next Step</button>
+                <button type="submit" id="btn">Next Step</button>
               </div>
             </div>
           </form>
           <!-- Step 1 end -->
 
           <!-- Step 2 start -->
-          <div class="step2-form">
+          <form class="step2-form" id="step2Form">
             <div class="title">
               <h1>Select your plan</h1>
               <p>You have the option of monthly or yearly billing.</p>
@@ -147,52 +147,52 @@
             </div>
             <div class="buttons step2-buttons">
               <p>Go Back</p>
-              <button type="submit">Next Step</button>
+              <button type="submit" id="btn">Next Step</button>
             </div>
-          </div>
+          </form>
           <!-- Step 2 end -->
 
           <!-- Step 3 start -->
-          <div class="step3-form">
+          <form class="step3-form" id="step3Form">
             <div class="title">
               <h1>Pick add-ons</h1>
               <p>Add-ons help enhance your gaming experience.</p>
             </div>
             <div class="add-ons">
-              <div class="add-on-row">
+              <label for="online-services" class="add-on-row">
                 <input type="checkbox" name="" id="online-services" />
                 <div class="description">
                   <h3>Online service</h3>
                   <p>Access to multiplayer games</p>
                 </div>
                 <p>+$1/mo</p>
-              </div>
-              <div class="add-on-row">
+              </label>
+              <label for="larger-storage" class="add-on-row">
                 <input type="checkbox" name="" id="larger-storage" />
                 <div class="description">
                   <h3>Larger storage</h3>
                   <p>Extra 1TB of cloud save</p>
                 </div>
                 <p>+$2/mo</p>
-              </div>
-              <div class="add-on-row">
+              </label>
+              <label for="customizable-profile" class="add-on-row">
                 <input type="checkbox" name="" id="customizable-profile" />
                 <div class="description">
                   <h3>Customizable Profile</h3>
                   <p>Custom theme on your profile</p>
                 </div>
                 <p>+$2/mo</p>
-              </div>
+              </label>
               <div class="buttons">
                 <p>Go Back</p>
-                <button id="btn">Next Step</button>
+                <button id="btn" type="submit">Next Step</button>
               </div>
             </div>
-          </div>
+          </form>
           <!-- Step 3 end -->
 
           <!-- Step 4 start -->
-          <div class="form4">
+          <form class="step4-form" id="step4Form">
             <div class="title">
               <h1>Finishing up</h1>
               <p>Double-check everything looks OK before confirming.</p>
@@ -207,21 +207,23 @@
             </div>
             <div class="buttons">
               <p>Go Back</p>
-              <button>Confirm</button>
+              <button type="submit" id="btn">Confirm</button>
             </div>
-          </div>
+          </form>
 
           <!-- Step 4 end -->
 
           <!-- Step 5 start -->
-          <div class="thank-you">
-            <img src="assets/images/icon-thank-you.svg" alt="" />
-            <h1>Thank you!</h1>
-            <p>
-              Thanks for confirming your subscription! We hope you have fun
-              using our platform. If you ever need support, please feel free to
-              email us at support@loremgaming.com.
-            </p>
+          <div class="thank-you" id="Step5">
+            <div class="thankyou-wrapper">
+              <img src="assets/images/icon-thank-you.svg" alt="" />
+              <h1>Thank you!</h1>
+              <p>
+                Thanks for confirming your subscription! We hope you have fun
+                using our platform. If you ever need support, please feel free
+                to email us at support@loremgaming.com.
+              </p>
+            </div>
           </div>
 
           <!-- Step 5 end -->

@@ -23,6 +23,47 @@
   --fw-regular: 500;
   --fw-bold: 700;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  width: 100%;
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
 * {
   padding: 0;
   margin: 0;
@@ -43,6 +84,7 @@ main {
 }
 .wrapper {
   width: 870px;
+  height: 600px;
   background: var(--Neutral-white);
   display: flex;
   gap: 1rem;
@@ -135,19 +177,20 @@ main {
 }
 
 /* right card */
-.step2-form {
-  display: none;
-}
+
 .card-right {
   flex: 1;
   padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-right .step1-form {
   width: 100%;
 }
 #step1-form {
-  display: none;
+  display: block;
 }
 
 .form-wrapper {
@@ -218,6 +261,9 @@ main {
 }
 
 /* step 2 form */
+.step2-form {
+  display: none;
+}
 .step2-form > h1,
 h2 {
   color: var(--Marine-blue);
@@ -314,21 +360,65 @@ input:checked + .slider:before {
 
 /* step 3 */
 .step3-form {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 .add-ons {
   display: flex;
   flex-direction: column;
 }
-.add-ons .add-on-row {
+.add-on-row {
   flex-basis: 30%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: 2px solid var(--Neutral-light-gray);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-block: 1rem;
 }
-.add-on-row:nth-child(1) {
+.add-on-row .description {
+  flex: 1;
+  padding-left: 1rem;
+}
+.add-on-row .description h3 {
+  font-size: 1rem;
+  color: var(--Marine-blue);
+  font-weight: var(--fw-bold);
+  margin-bottom: 0.25rem;
+}
+.add-on-row p {
+  font-size: 14px;
+  font-weight: var(--fw-small);
+  color: var(--Neutral-cool-gray);
+}
+
+/* step 4 */
+.step4-form {
+  display: none;
+}
+
+/* step 5 */
+.thank-you {
+  height: 100%;
+  margin: auto 0;
+  text-align: center;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.thankyou-wrapper h1 {
+  font-size: 30px;
+  color: var(--Marine-blue);
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+.thankyou-wrapper p {
+  color: var(--Neutral-cool-gray);
+  line-height: 1.5;
+}
+/* .add-on-row:nth-child(1) {
   flex-basis: 5%;
 }
 .add-on-row:nth-child(2) {
@@ -336,4 +426,4 @@ input:checked + .slider:before {
 }
 .add-on-row:nth-child(3) {
   flex-basis: 25%;
-}
+} */
