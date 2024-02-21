@@ -261,17 +261,17 @@ main {
 }
 
 /* step 2 form */
-.step2-form {
+.form2 {
   display: none;
 }
-.step2-form > h1,
+.form2 > h1,
 h2 {
   color: var(--Marine-blue);
 }
-.step2-form .title h1 {
+.form2 .title h1 {
   color: var(--Marine-blue);
 }
-.step2-form .options {
+.options {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -359,7 +359,7 @@ input:checked + .slider:before {
 }
 
 /* step 3 */
-.step3-form {
+.form3 {
   display: none;
   flex-direction: column;
 }
@@ -395,7 +395,7 @@ input:checked + .slider:before {
 }
 
 /* step 4 */
-.step4-form {
+.output {
   display: none;
 }
 
